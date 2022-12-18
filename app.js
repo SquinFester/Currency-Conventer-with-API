@@ -1,3 +1,8 @@
+// const selectory *global*
+
+const firstSelector = document.querySelector("#first-value");
+const secoundSelector = document.querySelector("#secound-value");
+
 //api
 const pln = {
   currency: "złoty",
@@ -46,11 +51,6 @@ function swap() {
   counter();
 }
 
-// const selectory *global*
-
-const firstSelector = document.querySelector("#first-value");
-const secoundSelector = document.querySelector("#secound-value");
-
 // listener for change option in selector
 
 document.querySelectorAll("select").forEach((element) => {
@@ -67,7 +67,6 @@ const addOption = (option, place) => {
     object.value = option[i].code;
     object.innerHTML = option[i].code;
     object.dataset.currency = option[i].mid;
-    firstSelector.appendChild(object);
     place.appendChild(object);
   }
 };
