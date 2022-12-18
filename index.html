@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <!-- import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6fc3d203c5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <section class="top">
+        <p id="curs">1 PLN is calculated</p>
+        <h1 id="curs-bottom">1 PLN</h1>
+      </section>
+
+      <main class="conventer">
+        <div class="inputter">
+          <input type="number" id="input-value" placeholder="0"/>
+
+          <select id="first-value">
+          </select>
+        </div>
+
+        <i id="arrows" class="fa-solid fa-arrow-right-arrow-left"></i>
+
+        <div class="inputter">
+          <input type="number" disabled id="result" />
+
+          <select id="secound-value">
+          </select>
+        </div>
+      </main>
+
+    <!-- script -->
+    <script src="app.js"></script>
+  </body>
+</html>
